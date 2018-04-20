@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v3.1.0</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.1.0/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-3.1.0/jasmine.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+
+  <script src="lib/jasmine-3.1.0/jasmine.js"></script>
+  <script src="lib/jasmine-3.1.0/jasmine-html.js"></script>
+  <script src="lib/jasmine-3.1.0/boot.js"></script>
+
+  <!-- include source files here... -->
+  <script src="../js/main.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="spec/appSpec.js"></script>
+
+</head>
+
+<body>
+  <div class="page-container">
+
+    <div class="header-main">
+      <header>
+        <h1 class="website-name">Adivina el número</h1>
+        <p class="try-counter">0</p>
+      </header>
+
+      <main>
+        <div class="input-number">
+          <label for="firstnumber">Introduce aquí tu número</label>
+          <input class="user-number" type="text" name="firstnumber">
+          <button id="sendButton" class="try-button" name="Prueba">Prueba</button>
+        </div>
+
+        <div class="player-data hidden">
+          <input id= "playerInput" type="text" name="playername" placeholder="María">
+          <button id="saveButton" class="save-button" name="Prueba">Guarda</button>
+        </div>
+
+        <div class="hint-box">
+          <p>Escribe un número y dale a
+            <span>Prueba</span>
+          </p>
+        </div>
+      </main>
+    </div>
+
+
+    <aside class="history-record">
+      <h3>Histórico</h3>
+      <ul class="historial"></ul>
+    </aside>
+
+  </div>
+
+  <script src="../js/main.js">
+  window.addEventListener('load', startApp);
+  </script>
+</body>
+</html>
